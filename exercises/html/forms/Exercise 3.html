@@ -1,43 +1,66 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title> Exercise #4: Subscription form </title>
+    <style>
+        fieldset {
+            background-color: lightblue;
+            width: 60%;
+            margin: auto;
+
+        }
+
+        label {
+            float: left;
+            width: 8em;
+            margin-right: 1em;
+            text-align: right;
+        }
+
+        .Submit {
+            display: block;
+            margin: auto;
+        }
+    </style>
 </head>
 
 <body>
-
-    <form style="width: 60%; margin: auto;">
-        <fieldset style="background-color: lightblue">
-            <legend>
-                <h4>Personal details</h4>
-            </legend>
-            <h4 style="display: inline">First name: </h4> <input type="text"> <br>
-            <h4 style="display: inline">Last name: </h4> <input type="text"> <br>
-            <h4 style="display: inline">Email: </h4> <input type="email"> <br>
-            <h4 style="display: inline">Gender: </h4> <input type="radio"> Male <input type="radio"> Female
-        </fieldset> <br>
-        <fieldset style="background-color: lightblue">
-            <legend>
-                <h4>Magazines</h4>
-            </legend>
-            <input type="checkbox"> Stavanger Aftenblad <br>
-            <input type="checkbox"> Teknisk Ukeblad <br>
-            <input type="checkbox"> Se og Hor <br>
-            <input type="checkbox"> Familien
-        </fieldset> <br>
-        <fieldset style="background-color: lightblue">
-            <legend>
-                <h4>Subscription</h4>
-            </legend>
-            <h4 style="display: inline">Period: </h4>
-            <select>
-                <option >6 Months</option>
-                <option >12 Months</option>
-                <option >18 Months</option>
-                <option >24 Months</option>
-            </select>
+    <form action="">
+        <fieldset>
+            <legend>Personal details</legend>
+            <label>First Name:</label> <input type="text" name="" value=""> 
+            <br>
+            <label>Last Name:</label> <input type="text" name=""> 
+            <br>
+            <label style="align: left;">Email address:</label> <input type="Email" name=""> 
+            <br>
+            <label>Gender</label>
+            <input type="radio" name="Male">Male
+            <input type="radio" name="Female">Female
         </fieldset>
-        <input style=" display: block; margin: auto;" type="submit" value="Subscribe">
+
+        <fieldset>
+            <legend>Magazines</legend>
+
+            <input type="checkbox" name="">Stavanger Aftenblad <br>
+            <input type="checkbox" name="">Teknisk Ukebland <br>
+            <input type="checkbox" name="">se og Hor <br>
+            <input type="checkbox" name="">Familien
+        </fieldset>
+
+        <fieldset>
+            <legend>Subscription</legend>
+            <label>Period </label>
+            <select>
+                <option>6 months</option>
+                <option>12 months</option>
+                <option>18 months</option>
+                <option>24 months</option>
+            </select>
+
+        </fieldset>
+        <br>
+            <input class="Submit" type="Submit" name="" value="Subscribe">
     </form>
 </body>
 
