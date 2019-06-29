@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Exercise #3: Styling source code</title>
+    <style>
+        pre {
+            font-family: Consolas, Menlo, Monaco, Courier New, monospace;
+            font-weight: bold;
+        }
+
+        .properties{
+            color: #0033cc;
+        }
+        
+        .values{
+            color: #009933;
+        }
+    </style>
 </head>
+
 <body>
 
-<p>Code snippet 1:</p>
-<pre>
+    <p>Code snippet 1:</p>
+    <pre>
 h1 {
-    font-family: Verdana;
-    font-size: 1.2em;
+    <span class="properties">font-family</span>:<span class="values"> Verdana </span>;
+    <span class="properties">font-size</span>: <span class="values">1.2em</span>;
 }
 </pre>
 
-<p>Code snippet 2:</p>
-<pre>
+    <p>Code snippet 2:</p>
+    <pre>
 p {
-    font-family: Arial;
-    color: blue;
-    text-align: right;
+    <span class="properties">font-family</span>: <span class="values">Arial</span>;
+    <span class="properties">color</span>: <span class="values">blue</span>;
+    <span class="properties">text-align</span>: <span class="values">right</span>;
 }
 </pre>
 
 </body>
+
 </html>
