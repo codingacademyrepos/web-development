@@ -1,0 +1,41 @@
+body {
+    background: #f0f8ff;
+}
+
+div {
+    min-width: 500px;
+    widows: 75%;
+    border: 1px solid #333;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+    background: white;
+}
+
+.coloredWord1 {
+    font-weight: bold;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background: #fdca96;
+}
+
+.coloredWord2 {
+    font-weight: bold;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background: #fdfd96;
+}
+
+#alert {
+    color: red;
+    border: 1px dashed red;
+    box-shadow: 2px 2px 3px red;
+
+}
+.hl1{
+    background: green;
+}
+.hl2{
+    background: lightseagreen;
+}
