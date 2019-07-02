@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
+    <!-- <style>
         body {
             padding-left: 10%;
         }
@@ -28,28 +28,29 @@
         .radioIn{
             margin-right: 5px;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
-    <form action="#" class="form-group">
-        <div>
+    <form action="#" class="form-group col col-lg-6">
+        <div class="col col-lg-4 form-group">
             <label for="first_name">First name:</label>
-            <input class="form-control in" type="text" name="first_name" id="first_name" />
+            <input class="form-control" type="text" name="first_name" id="first_name" />
         </div>
-        <div>
+        <div class="col col-lg-4 form-group">
             <label for="last_name">Last name:</label>
-            <input class="form-control in" type="text" name="last_name" id="last_name" />
+            <input class="form-control" type="text" name="last_name" id="last_name" />
         </div>
-        <div>
-            <label class="radioLa"><input class="radioIn" type="radio" name="gender" value="male" />male</label>
-            <label class="radioLa"><input class="radioIn" type="radio" name="gender" value="female" />female</label>
+        <div class="form-check">
+            <label><input type="radio" name="gender" value="male" />male</label>
+            <label><input type="radio" name="gender" value="female" />female</label>
         </div>
-        <div>
+        <div class="col col-lg-4 form-group">
             <label for="birth_date">Date of birth:</label>
-            <input class="form-control in" type="date" name="birth_date" id="birth_date" />
+            <input class="form-control form-group" type="date" name="birth_date" id="birth_date" />
+            <input class="btn btn-primary form-check" type="submit" value="Add" />
         </div>
-        <input class="btn btn-primary" type="submit" value="Add" />
+        
     </form>
 </body>
 
