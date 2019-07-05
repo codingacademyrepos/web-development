@@ -1,5 +1,108 @@
 <html>
-    <head>
-        <title>Exercise #3: Masonry layout</title>
-    </head>
+
+<head>
+    <title>Exercise #3: Masonry layout</title>
+
+    <style>
+        body {
+            background-color: red;
+            padding: 1rem;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+                        
+        }
+
+        .items{
+            width: 350px;
+            background-color: white;
+            margin: 20px;  
+            padding-bottom: 16px; 
+                 
+        }
+        .content{
+            margin: 4px 0 0 8px; 
+            padding-bottom: 16px; 
+        }
+        @for $i from 1 through 36 { 
+    div:nth-child(#{$i}) {
+      $h: (random(400) + 100) + px;
+      height: $h;
+      line-height: $h;
+    }
+    </style>
+</head>
+
+
+
+    <body>
+        <div class="container">
+            <div class="items">
+                <img src="https://via.placeholder.com/350x150C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <a class="content" href="null">Read More</a>
+            </div>
+            <div class="items">
+                <img src="https://via.placeholder.com/350x100C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti </p>
+                <a class="content" href="null">Read More</a>
+            </div>
+            <div class="items">
+                <img src="https://via.placeholder.com/350x100C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <a class="content" href="null">Read More</a>
+            </div>
+            <div class="items">
+                <img src="https://via.placeholder.com/350x220C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <a class="content" href="null">Read More</a>
+            </div>
+            <div class="items">
+                <img src="https://via.placeholder.com/350x230C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <a class="content" href="null">Read More</a>
+            </div>
+            <div class="items">
+                <img src="https://via.placeholder.com/350x350C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <a class="content" href="null">Read More</a>
+            </div>
+            <div class="items">
+                <img src="https://via.placeholder.com/350C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <a class="content" href="null">Read More</a>
+            </div>
+            <div class="items">
+                <img src="https://via.placeholder.com/350x230C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <a class="content" href="null">Read More</a>
+            </div>
+            <div class="items">
+                <img src="https://via.placeholder.com/350C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <a class="content" href="null">Read More</a>
+            </div>
+            <div class="items">
+                <img src="https://via.placeholder.com/350x250C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <a class="content" href="null">Read More</a>
+            </div>
+        </div>
+    </body>
+
+
 </html>
