@@ -1,0 +1,219 @@
+<html>
+
+<head>
+    <title>Exercise #6: Alphabet Navigation</title>
+    <style>
+        .main {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .alphabets {
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            min-height: 50px;
+            max-height: 50px;
+            justify-content: space-between;
+            color: gray;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .latters:hover {
+            cursor: pointer;
+            color: rgb(13, 231, 13);
+        }
+
+        .list-item {
+            display: flex;
+            width: 100%;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            height: 75px;
+            padding: 10px;
+            margin-bottom: 8px;
+        }
+
+        .avatar {
+            width: 16%;
+            height: 100%;
+            min-width: 40px;
+            min-height: 40px;
+            padding: 8px;
+            background-image: url();
+            background-color: rgb(13, 231, 13);
+            border-radius: 50%;
+            border-style: none;
+        }
+
+        .name {
+            color: gray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 100%;
+            align-self: center;
+            margin-left: 8px;
+            
+        }
+
+        .name:hover{
+            color:  rgb(13, 231, 13);
+            cursor: pointer;
+        }
+
+        .avatar:hover{
+            background-color: rgb(231, 173, 13);
+            cursor: pointer;
+        }
+        
+
+        .left,
+        .center,
+        .right {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            align-content: space-between;
+            margin: 8px;
+            padding: 8px;
+
+        }
+
+        .people{
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            width: 100%;
+            justify-content: space-between;
+            margin: 8px;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- Alphabets Row -->
+        <div class="alphabets">
+            <div class="latters">A</div>
+            <div class="latters">B</div>
+            <div class="latters">C</div>
+            <div class="latters">D</div>
+            <div class="latters">E</div>
+            <div class="latters">F</div>
+            <div class="latters">G</div>
+            <div class="latters">H</div>
+            <div class="latters">I</div>
+            <div class="latters">J</div>
+            <div class="latters">K</div>
+            <div class="latters">L</div>
+            <div class="latters">M</div>
+            <div class="latters">N</div>
+            <div class="latters">O</div>
+            <div class="latters">P</div>
+            <div class="latters">Q</div>
+            <div class="latters">R</div>
+            <div class="latters">S</div>
+            <div class="latters">T</div>
+            <div class="latters">U</div>
+            <div class="latters">V</div>
+            <div class="latters">W</div>
+            <div class="latters">X</div>
+            <div class="latters">Y</div>
+            <div class="latters">Z</div>
+        </div>
+
+        <!-- People Row -->
+        <div class="people">
+            <!-- Left Column -->
+            <div class="left">
+                <div class="list-item">
+                    <img src="../../../../images/boy.svg" alt="" class="avatar">
+                    <p class="name">Mohamad Obeidat</p>
+                </div>
+                <div class="list-item">
+                    <img src="../../../../images/girl.svg" alt="" class="avatar">
+                    <p class="name">Lorem, ipsum.</p>
+                </div>
+                <div class="list-item">
+                    <img src="../../../../images/boy.svg" alt="" class="avatar">
+                    <p class="name">Mohamad Obeidat</p>
+                </div>
+                <div class="list-item">
+                    <img src="../../../../images/girl.svg" alt="" class="avatar">
+                    <p class="name">Lorem, ipsum.</p>
+                </div>
+                <div class="list-item">
+                    <img src="../../../../images/boy.svg" alt="" class="avatar">
+                    <p class="name">Mohamad Obeidat</p>
+                </div>
+                <div class="list-item">
+                    <img src="../../../../images/girl.svg" alt="" class="avatar">
+                    <p class="name">Lorem, ipsum.</p>
+                </div>
+            </div>
+            <!-- Center Column -->
+            <div class="center">
+                <div class="list-item">
+                    <img src="../../../../images/girl.svg" alt="" class="avatar">
+                    <p class="name">Lorem, ipsum.</p>
+                </div>
+                <div class="list-item">
+                    <img src="../../../../images/boy.svg" alt="" class="avatar">
+                    <p class="name">Mohamad Obeidat</p>
+                </div>
+                <div class="list-item">
+                    <img src="../../../../images/girl.svg" alt="" class="avatar">
+                    <p class="name">Lorem, ipsum.</p>
+                </div>
+                <div class="list-item">
+                    <img src="../../../../images/boy.svg" alt="" class="avatar">
+                    <p class="name">Mohamad Obeidat</p>
+                </div>
+                <div class="list-item">
+                    <img src="../../../../images/girl.svg" alt="" class="avatar">
+                    <p class="name">Lorem, ipsum.</p>
+                </div>
+                <div class="list-item">
+                    <img src="../../../../images/boy.svg" alt="" class="avatar">
+                    <p class="name">Mohamad Obeidat</p>
+                </div>
+            </div>
+            <!-- Right Column -->
+            <div class="right">
+                <div class="list-item">
+                    <img src="../../../../images/boy.svg" alt="" class="avatar">
+                    <p class="name">Mohamad Obeidat</p>
+                </div>
+                <div class="list-item">
+                    <img src="../../../../images/girl.svg" alt="" class="avatar">
+                    <p class="name">Lorem, ipsum.</p>
+                </div>
+                <div class="list-item">
+                    <img src="../../../../images/boy.svg" alt="" class="avatar">
+                    <p class="name">Mohamad Obeidat</p>
+                </div>
+                <div class="list-item">
+                    <img src="../../../../images/girl.svg" alt="" class="avatar">
+                    <p class="name">Lorem, ipsum.</p>
+                </div>
+                <div class="list-item">
+                    <img src="../../../../images/boy.svg" alt="" class="avatar">
+                    <p class="name">Mohamad Obeidat</p>
+                </div>
+                <div class="list-item">
+                    <img src="../../../../images/girl.svg" alt="" class="avatar">
+                    <p class="name">Lorem, ipsum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
