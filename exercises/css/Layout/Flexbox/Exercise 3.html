@@ -9,100 +9,147 @@
             padding: 1rem;
         }
 
-        .container {
+        .flex-container {
             display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
+            flex-flow: row wrap;
+            padding: 8px;
             justify-content: center;
-                        
         }
 
-        .items{
+        .left,
+        .center,
+        .right {
+            display: flex;
+            flex-flow: column wrap;
+            height: 100%;
+        }
+
+        .flex-item {
+            display: flex;
+            flex-flow: column wrap;
+            height: 100%;
+            flex: 0 0 auto;
+            min-height: 100px;
             width: 350px;
+            margin: 8px;
+            padding-bottom: 8px;
             background-color: white;
-            margin: 20px;  
-            padding-bottom: 16px; 
-                 
         }
-        .content{
-            margin: 4px 0 0 8px; 
-            padding-bottom: 16px; 
+
+        .content {
+            margin-left: 8px;
         }
-        @for $i from 1 through 36 { 
-    div:nth-child(#{$i}) {
-      $h: (random(400) + 100) + px;
-      height: $h;
-      line-height: $h;
-    }
     </style>
 </head>
 
 
 
-    <body>
-        <div class="container">
-            <div class="items">
+<body>
+    <div class="flex-container">
+        <div class="left">
+            <div class="flex-item">
                 <img src="https://via.placeholder.com/350x150C/O https://placeholder.com/" alt="" class="placehoder">
                 <h2 class="content">Lorem, ipsum dolor.</h2>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum
+                    optio
+                    eligendi deleniti expedita, explicabo exercitationem sunt harum placeat? Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo
+                    exercitationem sunt harum placeat?</p>
                 <a class="content" href="null">Read More</a>
             </div>
-            <div class="items">
-                <img src="https://via.placeholder.com/350x100C/O https://placeholder.com/" alt="" class="placehoder">
-                <h2 class="content">Lorem, ipsum dolor.</h2>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti </p>
-                <a class="content" href="null">Read More</a>
-            </div>
-            <div class="items">
-                <img src="https://via.placeholder.com/350x100C/O https://placeholder.com/" alt="" class="placehoder">
-                <h2 class="content">Lorem, ipsum dolor.</h2>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
-                <a class="content" href="null">Read More</a>
-            </div>
-            <div class="items">
+            <div class="flex-item">
                 <img src="https://via.placeholder.com/350x220C/O https://placeholder.com/" alt="" class="placehoder">
                 <h2 class="content">Lorem, ipsum dolor.</h2>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum
+                    optio
+                    eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
                 <a class="content" href="null">Read More</a>
             </div>
-            <div class="items">
-                <img src="https://via.placeholder.com/350x230C/O https://placeholder.com/" alt="" class="placehoder">
-                <h2 class="content">Lorem, ipsum dolor.</h2>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
-                <a class="content" href="null">Read More</a>
-            </div>
-            <div class="items">
-                <img src="https://via.placeholder.com/350x350C/O https://placeholder.com/" alt="" class="placehoder">
-                <h2 class="content">Lorem, ipsum dolor.</h2>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
-                <a class="content" href="null">Read More</a>
-            </div>
-            <div class="items">
+            <div class="flex-item">
                 <img src="https://via.placeholder.com/350C/O https://placeholder.com/" alt="" class="placehoder">
                 <h2 class="content">Lorem, ipsum dolor.</h2>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum
+                    optio
+                    eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
                 <a class="content" href="null">Read More</a>
             </div>
-            <div class="items">
-                <img src="https://via.placeholder.com/350x230C/O https://placeholder.com/" alt="" class="placehoder">
-                <h2 class="content">Lorem, ipsum dolor.</h2>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
-                <a class="content" href="null">Read More</a>
-            </div>
-            <div class="items">
-                <img src="https://via.placeholder.com/350C/O https://placeholder.com/" alt="" class="placehoder">
-                <h2 class="content">Lorem, ipsum dolor.</h2>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
-                <a class="content" href="null">Read More</a>
-            </div>
-            <div class="items">
+            <div class="flex-item">
                 <img src="https://via.placeholder.com/350x250C/O https://placeholder.com/" alt="" class="placehoder">
                 <h2 class="content">Lorem, ipsum dolor.</h2>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum
+                    optio
+                    eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <a class="content" href="null">Read More</a>
+            </div>
+
+        </div>
+
+        <div class="center">
+            <div class="flex-item">
+                <img src="https://via.placeholder.com/350x100C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum
+                    optio
+                    eligendi deleniti </p>
+                <a class="content" href="null">Read More</a>
+            </div>
+            <div class="flex-item">
+                <img src="https://via.placeholder.com/350x230C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum
+                    optio
+                    eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <a class="content" href="null">Read More</a>
+            </div>
+            <div class="flex-item">
+                <img src="https://via.placeholder.com/350x350C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum
+                    optio
+                    eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <a class="content" href="null">Read More</a>
+            </div>
+            <div class="flex-item">
+                <img src="https://via.placeholder.com/350C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum
+                    optio
+                    eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
                 <a class="content" href="null">Read More</a>
             </div>
         </div>
-    </body>
+
+        <div class="right">
+            <div class="flex-item">
+                <img src="https://via.placeholder.com/350x100C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum
+                    optio
+                    eligendi deleniti expedita, explicabo exercitationem sunt harum placeat? Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Architecto natus dolorum optio eligendi deleniti expedita, explicabo
+                    exercitationem sunt harum placeat?</p>
+                <a class="content" href="null">Read More</a>
+            </div>
+            <div class="flex-item">
+                <img src="https://via.placeholder.com/350x350C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum
+                    optio
+                    eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <a class="content" href="null">Read More</a>
+            </div>
+            <div class="flex-item">
+                <img src="https://via.placeholder.com/350x230C/O https://placeholder.com/" alt="" class="placehoder">
+                <h2 class="content">Lorem, ipsum dolor.</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto natus dolorum
+                    optio
+                    eligendi deleniti expedita, explicabo exercitationem sunt harum placeat?</p>
+                <a class="content" href="null">Read More</a>
+            </div>
+
+        </div>
+    </div>
+</body>
 
 
 </html>
