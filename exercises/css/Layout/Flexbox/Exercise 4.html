@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <title>Exercise #4: Google Hangout Chat Page</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        .main {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .bubble-sender,
+        .bubble-receiver {
+            display: flex;
+            margin-bottom: 8px;
+
+            text-align: top;
+            flex-flow: row;
+            max-width: 600px;
+        }
+
+        .bubble-receiver {
+            flex-direction: row-reverse;
+        }
+
+        .avatar-sender,
+        .avatar-receiver {
+            height: 70px;
+            width: 70px;
+            min-height: 70px;
+            min-width: 70px;
+            border-radius: 3px;
+        }
+
+        .avatar-receiver {
+            align-self: flex-end;
+        }
+
+        .avatar-sender {
+            align-self: flex-start;
+        }
+
+
+
+        .text-receiver,
+        .text-sender {
+            margin: 8px;
+            background-color: white;
+            border-radius: 3px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="bubble-sender">
+            <img src="../../../../images/avatar.jpg" alt="" class="avatar-sender">
+            <div class="text-sender">
+                <p class="message">Lorem ipsum</p>
+            </div>
+        </div>
+        <div class="bubble-sender">
+            <img src="../../../../images/avatar.jpg" alt="" class="avatar-sender">
+            <div class="text-sender">
+                <p class="message">Lorem ipsum, dolor sit amet</p>
+            </div>
+        </div>
+        <div class="bubble-receiver">
+            <img src="../../../../images/avatar2.jpeg" alt="" class="avatar-receiver">
+            <div class="text-receiver">
+                <p class="message">Lorem ipsum, dolor sit </p>
+            </div>
+        </div>
+        <div class="bubble-sender">
+            <img src="../../../../images/avatar.jpg" alt="" class="avatar-sender">
+            <div class="text-sender">
+                <p class="message">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis saepe nihil
+                    natus et! Nulla, est!</p>
+            </div>
+        </div>
+        <div class="bubble-receiver">
+            <img src="../../../../images/avatar3.jpg" alt="" class="avatar-receiver">
+            <div class="text-receiver">
+                <p class="message">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis saepe nihil
+                    natus et! Nulla, est!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis saepe
+                    nihil natus et! Nulla, est!Lorem ipsum, dolor sit amet consectetur adipisicing Lorem ipsum, dolor
+                    sit amet consectetur adipisicing elit. Blanditiis saepe nihil natus et! Nulla, est! elit. Blanditiis
+                    saepe nihil natus et! Nulla, est!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
