@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #4: Simple Grid Layout</title>
+    <style>
+        .main {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+        div.main > div{
+            padding: 8px;
+            background-color: orange;
+        }
+        .header{
+            grid-area: 1/ 1/ 2/ 7 ;
+        }
+        .nav{
+            grid-area: 2/ 1/ 8/ 2; 
+        }
+        .article{
+            grid-area: 2/ 2/ 7/ 6;
+        }
+        .ads{
+            grid-area: 2/ 6/ 7/ 7
+        }
+        .footer{
+            grid-area: 7/ 2/ 8/ 7
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">Header</div>
+        <div class="nav">Nav</div>
+        <div class="article">Article</div>
+        <div class="ads">Ads</div>
+        <div class="footer">Footer</div>
+
+    </div>
+</body>
+
+</html>
