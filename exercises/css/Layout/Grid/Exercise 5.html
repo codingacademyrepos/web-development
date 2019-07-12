@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Exercise #5: 12 Column Grids [horizontal ]</title>
+    <style>
+        .container{
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-gap: 6px;
+        }
+        div.container > div{
+            height: 70px;
+            color: white;
+            text-align: center;
+            background-color: orange;
+            font-size: 32px;
+        }
+        .block-1{
+            grid-area: 1/ 1/ 2/ 13;
+        }
+        .block-2{
+            grid-area: 2/ 1/ 3/ 7;
+        }
+        .block-3{
+            grid-area: 2/ 7/ 3/ 13;
+        }
+        .block-4{
+            grid-area: 3/ 1/ 4/ 5;
+        }
+        .block-5{
+            grid-area: 3/ 5/ 4/ 9;
+        }
+        .block-6{
+            grid-area: 3/ 9/ 4/ 13;
+        }
+        .block-7{
+            grid-area: 4/ 1/ 4/ 4;
+        }
+        .block-8{
+            grid-area: 4/ 4/ 5/ 7;
+        }
+        .block-9{
+            grid-area: 4/ 7/ 5/ 10;
+        }
+        .block-10{
+            grid-area: 4/ 10/ 5/ 13;
+        }
+        .block-11{
+            grid-area: 5/ 1/ 6/ 3;
+        }
+        .block-12{
+            grid-area: 5/ 3/ 6/ 5;
+        }
+        .block-13{
+            grid-area: 5/ 5/ 6/ 7;
+        }
+        .block-14{
+            grid-area: 5/ 7/ 6/ 9;
+        }
+        .block-15{
+            grid-area: 5/ 9/ 6/ 11;
+        }
+        .block-16{
+            grid-area: 5/ 11/ 6/ 13;
+        }
+        .block-17{
+            grid-area: 6/ 1/ 7/ 2;
+        }
+        .block-18{
+            grid-area: 6/ 2/ 7/ 3;
+        }
+        .block-19{
+            grid-area: 6/ 3/ 7/ 4;
+        }
+        .block-20{
+            grid-area: 6/ 4/ 7/ 5;
+        }
+        .block-21{
+            grid-area: 6/ 5/ 7/ 6;
+        }
+        .block-22{
+            grid-area: 6/ 6/ 7/ 7;
+        }
+        .block-23{
+            grid-area: 6/ 7/ 7/ 8;
+        }
+        .block-24{
+            grid-area: 6/ 8/ 7/ 9;
+        }
+        .block-25{
+            grid-area: 6/ 9/ 7/ 10;
+        }
+        .block-26{
+            grid-area: 6/ 10/ 7/ 11;
+        }
+        .block-27{
+            grid-area: 6/ 11/ 7/ 12;
+        }
+        .block-28{
+            grid-area: 6/ 12/ 7/ 13;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block-1">1</div>
+        <div class="block-2">2</div>
+        <div class="block-3">3</div>
+        <div class="block-4">4</div>
+        <div class="block-5">5</div>
+        <div class="block-6">6</div>
+        <div class="block-7">7</div>
+        <div class="block-8">8</div>
+        <div class="block-9">9</div>
+        <div class="block-10">10</div>
+        <div class="block-11">11</div>
+        <div class="block-12">12</div>
+        <div class="block-13">13</div>
+        <div class="block-14">14</div>
+        <div class="block-15">15</div>
+        <div class="block-16">16</div>
+        <div class="block-17">17</div>
+        <div class="block-18">18</div>
+        <div class="block-19">19</div>
+        <div class="block-20">20</div>
+        <div class="block-21">21</div>
+        <div class="block-22">22</div>
+        <div class="block-23">23</div>
+        <div class="block-24">24</div>
+        <div class="block-25">25</div>
+        <div class="block-26">26</div>
+        <div class="block-27">27</div>
+        <div class="block-28">28</div>
+    </div>
+</body>
+</html>
